@@ -212,23 +212,39 @@ Quit the PostgreSQL session:
 
 ## Screenshots
 
-### 1. PostgreSQL Installation & Service Verification
+### 1. Package Installation and Setup
+The screenshots below show updating the package list and installing PostgreSQL with contrib utilities.
 
-The screenshot below shows the service verification for PostgreSQL running actively on Ubuntu.
+![PostgreSQL Installation](screenshots/Screenshot%202026-08-20%20214843.png)
 
-![PostgreSQL Service Status](screenshots/postgresql-service-status.png)
+![Installation Confirmation](screenshots/Screenshot%202026-08-20%20214856.png)
 
-### 2. Database and Table Creation
+### 2. PostgreSQL Service Status
+The screenshots below show starting the PostgreSQL service and verifying that it is active and running.
 
-The screenshot below demonstrates creating the `college_db` database, connecting to it, creating the `students` table, and inspecting its schema with `\d students`.
+![Service Initialization](screenshots/Screenshot%202026-08-20%20215031.png)
 
-![Database and Table Creation](screenshots/db-and-table-creation.png)
+![Service Active Running Status](screenshots/Screenshot%202026-08-20%20215123.png)
 
-### 3. Data Insertion and Query Verification
+### 3. Database Creation and Connection
+The screenshot below shows entering the `psql` interactive prompt, creating the `college_db` database, and switching to it.
 
-The screenshot below shows the successful insertion of student records and execution of `SELECT * FROM students;` displaying the table records.
+![Create and Connect Database](screenshots/Screenshot%202026-08-20%20215618.png)
 
-![Query Student Records](screenshots/query-student-records.png)
+### 4. Creating the Students Table
+The screenshot below shows executing the `CREATE TABLE students` statement with column constraints.
+
+![Create Students Table](screenshots/Screenshot%202026-08-20%20220055.png)
+
+### 5. Inspecting Table Schema
+The screenshot below shows verifying the table with `\dt` and describing the column schema with `\d students`.
+
+![Inspect Table Schema](screenshots/Screenshot%202026-08-20%20220159.png)
+
+### 6. Inserting and Querying Student Records
+The screenshot below shows inserting sample student rows and querying all records using `SELECT * FROM students;`.
+
+![Query Student Records](screenshots/Screenshot%202026-08-20%20220424.png)
 
 ---
 
